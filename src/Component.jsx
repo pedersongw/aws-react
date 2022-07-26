@@ -1,22 +1,23 @@
 import React from "react";
 import axios from "axios";
 
-
 class Component extends React.Component {
   state = {
     message: "nothing yet",
     secondMessage: "button nothing yet",
   };
-  componentDidMount() {
+  async componentDidMount() {
     try {
-        const { data } = await axios.get("http://garrett-env.eba-4k3rxv8v.us-east-2.elasticbeanstalk.com");
-        this.setState({ message: data });
-      } catch (err) {
-        console.log(err);
-      }
+      const { data } = await axios.get(
+        "http://garrett-env.eba-4k3rxv8v.us-east-2.elasticbeanstalk.com"
+      );
+      this.setState({ message: data });
+    } catch (err) {
+      console.log(err);
+    }
   }
   buttonClicked = () => {
-    console.log("button clicked")
+    console.log("button clicked");
   };
 
   render() {
