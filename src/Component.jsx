@@ -9,7 +9,7 @@ class Component extends React.Component {
   async componentDidMount() {
     try {
       const { data } = await axios.get(
-        "https://garrett-env.eba-4k3rxv8v.us-east-2.elasticbeanstalk.com"
+        "http://garrett-env.eba-4k3rxv8v.us-east-2.elasticbeanstalk.com"
       );
       this.setState({ message: data });
     } catch (err) {
