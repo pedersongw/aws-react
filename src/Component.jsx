@@ -23,7 +23,7 @@ class Component extends React.Component {
   render() {
     return (
       <div>
-        <h1>The message</h1>
+        <h1>The message that should load with page</h1>
         <h2>{this.state.message}</h2>
         <h1>Button message</h1>
         <h2>{this.state.secondMessage}</h2>
