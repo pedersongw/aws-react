@@ -1,34 +1,84 @@
 import React from "react";
 import axios from "axios";
+import styles from "./Component.module.css";
 
 class Component extends React.Component {
   state = {
-    message: "nothing yet",
-    secondMessage: "button nothing yet",
+    message: null,
+    images: [],
+    drawn: [],
+    highlighed: null,
   };
-  async componentDidMount() {
-    try {
-      const { data } = await axios.get(
-        "http://garrett-env.eba-4k3rxv8v.us-east-2.elasticbeanstalk.com"
-      );
-      this.setState({ message: data });
-    } catch (err) {
-      console.log(err);
+
+  drawClicked = async () => {
+    if (this.state.drawn.length < 5) {
+      try {
+        const deck = localStorage.getItem("deck");
+        const { data } = await axios.get(
+          `https://deckofcardsapi.com/api/deck/${deck}/draw/?count=1`
+        );
+        console.log(data);
+        let drawn = [...this.state.drawn];
+        for (let i = 0; i < data.cards.length; i++) {
+          drawn.push(data.cards[i]);
+        }
+        this.setState({ message: data, drawn: drawn });
+      } catch (error) {
+        this.setState({ message: error });
+        console.log(error);
+      }
     }
-  }
-  buttonClicked = () => {
-    console.log("button clicked");
+  };
+
+  returnClicked = async () => {
+    try {
+      const deck = localStorage.getItem("deck");
+      const { data } = await axios.get(
+        `https://deckofcardsapi.com/api/deck/${deck}/return/`
+      );
+      console.log(data);
+      this.setState({ message: data, drawn: [] });
+    } catch (error) {
+      this.setState({ message: error });
+      console.log(error);
+    }
+  };
+
+  highlight = (event) => {
+    let id = Number(event.target.id.split("_")[1].slice(-1));
+    this.setState({ highlighted: id });
+    let element = document.getElementById(event.target.id);
+    let rect = element.getBoundingClientRect();
+    console.log(rect);
+  };
+
+  mapImages = () => {
+    return this.state.drawn.map((card, index) => (
+      <img
+        className={
+          this.state.highlighted === index
+            ? `${styles.image} ${styles.highlighted}`
+            : styles.image
+        }
+        id={styles[`card${index.toString()}`]}
+        key={index}
+        alt="card"
+        src={card.image}
+        onClick={(event) => this.highlight(event)}
+      ></img>
+    ));
   };
 
   render() {
     return (
       <div>
-        <h1>The message that should load with page</h1>
-        <h2>{this.state.message}</h2>
-        <h1>Button message</h1>
-        <h2>{this.state.secondMessage}</h2>
+        <h2 className={styles.message}>{JSON.stringify(this.state.message)}</h2>
+        <button onClick={() => this.drawClicked()}>Draw</button>
+        <button onClick={() => this.returnClicked()}>return</button>
 
-        <button onClick={() => this.buttonClicked()}>Button</button>
+        <div className={styles.hand}>
+          {this.state.drawn !== [] ? this.mapImages() : null}
+        </div>
       </div>
     );
   }
