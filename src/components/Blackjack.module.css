@@ -1,0 +1,107 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.handWrapper {
+  display: flex;
+  min-height: 50vh;
+  justify-content: space-around;
+}
+
+.counters {
+  min-height: 20vh;
+  max-height: 30vh;
+  width: 15vw;
+  background-color: black;
+  color: white;
+}
+
+.playerHand {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 38.75%;
+}
+
+.dealerHand {
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50%;
+  width: 38.75%;
+}
+
+.card {
+  height: 200px;
+  width: 145px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+  background-size: cover;
+  background-position: center;
+  left: 50vw;
+  top: 50vh;
+}
+
+.cornerDot {
+  width: 0;
+  height: 0;
+}
+
+#playerDotOne0,
+#playerDotOne1,
+#playerDotOne2,
+#playerDotOne3,
+#playerDotOne4,
+#dealerDotOne0,
+#dealerDotOne1,
+#dealerDotOne2,
+#dealerDotOne3,
+#dealerDotOne4 {
+  grid-area: one;
+}
+
+#playerDotTwo0,
+#playerDotTwo1,
+#playerDotTwo2,
+#playerDotTwo3,
+#playerDotTwo4,
+#dealerDotTwo0,
+#dealerDotTwo1,
+#dealerDotTwo2,
+#dealerDotTwo3,
+#dealerDotTwo4 {
+  grid-area: two;
+}
+
+#playerDotThree0,
+#playerDotThree1,
+#playerDotThree2,
+#playerDotThree3,
+#playerDotThree4,
+#dealerDotThree0,
+#dealerDotThree1,
+#dealerDotThree2,
+#dealerDotThree3,
+#dealerDotThree4 {
+  grid-area: three;
+}
+
+#playerDotFour0,
+#playerDotFour1,
+#playerDotFour2,
+#playerDotFour3,
+#playerDotFour4,
+#dealerDotFour0,
+#dealerDotFour1,
+#dealerDotFour2,
+#dealerDotFour3,
+#dealerDotFour4 {
+  grid-area: four;
+}

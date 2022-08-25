@@ -1,0 +1,94 @@
+.wrapper {
+  position: relative;
+}
+
+.message {
+  width: 300px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.hand {
+  margin-left: auto;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(20, 179, 144);
+}
+
+.card {
+  height: 200px;
+  width: 145px;
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+  background-size: cover;
+  background-position: center;
+  left: 50vw;
+  top: 50vh;
+}
+
+.cornerDot {
+  width: 0;
+  height: 0;
+}
+
+#dotOne0,
+#dotOne1,
+#dotOne2,
+#dotOne3,
+#dotOne4 {
+  grid-area: one;
+}
+
+#dotTwo0,
+#dotTwo1,
+#dotTwo2,
+#dotTwo3 #dotTwo4 {
+  grid-area: two;
+}
+
+#dotThree0,
+#dotThree1,
+#dotThree2,
+#dotThree3,
+#dotThree4 {
+  grid-area: three;
+}
+
+#dotFour0,
+#dotFour1,
+#dotFour2,
+#dotFour3,
+#dotFour4 {
+  grid-area: four;
+}
+
+.highlighted {
+  border: 2px solid blue;
+}
+
+#card0 {
+  transform-origin: bottom left;
+  transform: rotate(-16deg);
+}
+#card1 {
+  transform-origin: bottom left;
+  transform: rotate(-8deg);
+}
+#card2 {
+  transform: rotate(0);
+}
+
+#card3 {
+  transform-origin: bottom left;
+  transform: rotate(8deg);
+}
+#card4 {
+  transform-origin: bottom left;
+  transform: rotate(16deg);
+}

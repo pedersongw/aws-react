@@ -1,10 +1,11 @@
 import "./App.css";
-import Component from "./Component";
+import Component from "./components/Component";
+import Blackjack from "./components/Blackjack";
 
 function App() {
   return (
     <div className="App">
-      <Component />
+      <Blackjack />
     </div>
   );
 }
