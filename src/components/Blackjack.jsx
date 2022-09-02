@@ -30,7 +30,7 @@ class Blackjack extends React.Component {
         playerDrawn.push(data.cards[i]);
       }
       this.setState({ message: data, playerDrawn: playerDrawn }, () =>
-        this.updatePlayerScore()
+        this.updateScore("player")
       );
       let number = Math.floor(Math.random() * 1000 + 2000);
       setTimeout(() => this.drawDealer(), number);
@@ -56,13 +56,16 @@ class Blackjack extends React.Component {
     }
     if (!lowScore) {
       draw = true;
-    } else if (highScore && highScore < 17) {
-      draw = true;
       console.log("drawing");
-    } else if (highScore && highScore > 21 && lowScore < 17) {
-      draw = true;
-      console.log("drawing");
-    } else if (!highScore && lowScore < 17) {
+    } else if (highScore === 21 || lowScore === 21) {
+      draw = false;
+      console.log("not drawing", lowScore, highScore);
+      this.setState({ dealerHold: true });
+    } else if (
+      (highScore && highScore < 17) ||
+      (highScore && highScore > 21 && lowScore < 17) ||
+      (!highScore && lowScore < 17)
+    ) {
       draw = true;
       console.log("drawing");
     } else {
@@ -82,7 +85,7 @@ class Blackjack extends React.Component {
           dealerDrawn.push(data.cards[i]);
         }
         this.setState({ message: data, dealerDrawn: dealerDrawn }, () =>
-          this.updateDealerScore()
+          this.updateScore("dealer")
         );
       } catch (error) {
         this.setState({ message: error });
@@ -98,10 +101,14 @@ class Blackjack extends React.Component {
     }
   };
 
-  updatePlayerScore = () => {
+  updateScore = (who) => {
     console.log("upate player score called");
+
+    let varDrawn = `${who}Drawn`;
+    let varScore = `${who}Score`;
+
     let codes = [];
-    let hand = [...this.state.playerDrawn];
+    let hand = [...this.state[varDrawn]];
     let aces = hand.filter((card) => card.code[0] === "A");
     for (let i = 0; i < hand.length; i++) {
       let code = hand[i].code[0];
@@ -137,84 +144,32 @@ class Blackjack extends React.Component {
       console.log("multiple aces");
     }
     if (oneOrTwoOptions[0] > 21) {
-      this.setState({ bust: true });
-    }
-    this.setState({ playerScore: oneOrTwoOptions });
-    console.log(oneOrTwoOptions);
-  };
-  updateDealerScore = () => {
-    console.log("upate dealer score called");
-
-    let codes = [];
-
-    let hand = [...this.state.dealerDrawn];
-
-    let aces = hand.filter((card) => card.code[0] === "A");
-
-    //build array of card codes in playerCodes and codes
-
-    for (let i = 0; i < hand.length; i++) {
-      let code = hand[i].code[0];
-      if (code === "J" || code === "Q" || code === "K" || code === "0") {
-        codes.push(10);
-      } else if (code === "A") {
-        codes.push("A");
-      } else {
-        codes.push(Number(code));
-      }
+      who === "player"
+        ? this.setState({ bust: true })
+        : this.setState({ dealerBust: true });
     }
 
-    let oneOrTwoOptions = [];
-    // no matter how many aces, if one ace, two point option
-
-    if (aces.length === 0) {
-      let counter = 0;
-      for (let i = 0; i < codes.length; i++) {
-        counter += codes[i];
-      }
-
-      oneOrTwoOptions.push(counter);
-    } else {
-      let arr = codes.filter((code) => code !== "A");
-      let first;
-      let second;
-      let counter = 0;
-      for (let i = 0; i < arr.length; i++) {
-        counter += arr[i];
-      }
-      let num = aces.length - 1;
-      first = counter + num + 1;
-      second = counter + num + 11;
-      oneOrTwoOptions.push(first, second);
-    }
-    if (oneOrTwoOptions[0] > 21) {
-      this.setState({ dealerBust: true });
-    }
-    this.setState({ dealerScore: oneOrTwoOptions }, () =>
-      this.drawDealerIfHeld()
-    );
+    who === "dealer"
+      ? this.setState({ [varScore]: oneOrTwoOptions }, () =>
+          this.drawDealerIfHeld()
+        )
+      : this.setState({ [varScore]: oneOrTwoOptions });
     console.log(oneOrTwoOptions);
   };
 
-  playerScoreToText = () => {
-    const { playerScore } = this.state;
-    if (!playerScore[0]) {
+  scoreToText = (who) => {
+    let variable = `${who}Score`;
+    console.log("score to text called", this.state[variable]);
+    if (!this.state[variable][0]) {
       return null;
-    } else if (playerScore[1]) {
-      return playerScore[0].toString() + " : " + playerScore[1].toString();
+    } else if (this.state[variable][1]) {
+      return (
+        this.state[variable][0].toString() +
+        " : " +
+        this.state[variable][1].toString()
+      );
     } else {
-      return playerScore[0].toString();
-    }
-  };
-
-  dealerScoreToText = () => {
-    const { dealerScore } = this.state;
-    if (!dealerScore[0]) {
-      return null;
-    } else if (dealerScore[1]) {
-      return dealerScore[0].toString() + " : " + dealerScore[1].toString();
-    } else {
-      return dealerScore[0].toString();
+      return this.state[variable].toString();
     }
   };
 
@@ -257,8 +212,8 @@ class Blackjack extends React.Component {
           firstDeal: true,
         },
         () => {
-          this.updateDealerScore();
-          this.updatePlayerScore();
+          this.updateScore("dealer");
+          this.updateScore("player");
         }
       );
     } catch (error) {
@@ -387,8 +342,12 @@ class Blackjack extends React.Component {
             {this.state.playerDrawn !== [] ? this.mapPlayerImages() : null}
           </div>
           <div className={styles.counters}>
-            <div className={styles.playerScore}>{this.playerScoreToText()}</div>
-            <div className={styles.dealerScore}>{this.dealerScoreToText()}</div>
+            <div className={styles.playerScore}>
+              {this.scoreToText("player")}
+            </div>
+            <div className={styles.dealerScore}>
+              {this.scoreToText("dealer")}
+            </div>
             {this.state.bust && <h1>BUSTED</h1>}
             {this.state.dealerHold && <h1>Dealer Hold</h1>}
             {this.state.dealerBust && <h1>Dealer Bust</h1>}
