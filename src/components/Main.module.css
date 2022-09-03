@@ -1,3 +1,11 @@
-.card {
-  transform: scale(0.5);
+.cardWrapper {
+  height: 100px;
+  position: relative;
+}
+
+#card {
+  position: absolute;
+  transform: scale(0.75);
+  left: 0;
+  top: 0;
 }

@@ -19,6 +19,68 @@ class Component extends React.Component {
     window.addEventListener("keypress", () => console.log(this.state));
   }
 
+  computeCopyAreaValue = () => {
+    const { input } = this.state;
+
+    let regex = new RegExp(/id="[^"]*"/, "g");
+
+    let array = input.match(regex);
+
+    let string = input;
+
+    let URLMatches = 0;
+    let nonURLMatches = 0;
+
+    for (let i = 0; i < array.length; i++) {
+      let newId = uuidv4();
+      let specificOldId = array[i].split("=")[1].slice(1, -1);
+
+      let firstRegex = 'id="' + specificOldId + '"';
+      let firstReplacement = "id={'" + newId.toString() + "'}";
+
+      let secondSearch = "url(#" + specificOldId + ")";
+      let secondRegBuilder = `url\\(#${specificOldId}\\)`;
+      let secondRegex = new RegExp(secondRegBuilder, "g");
+      let secondReplacement = `\"url\(#${newId.toString()}\"`;
+
+      let thirdSearch = '"#' + specificOldId + '"';
+      let thirdRegex = new RegExp(thirdSearch, "g");
+
+      let thirdReplacement = `\"#${newId.toString()}\"`;
+
+      let URLMatch = string.match(secondRegex);
+      if (URLMatch) {
+        URLMatches += URLMatch.length;
+      }
+
+      let nonURLMatch = string.match(thirdRegex);
+      if (nonURLMatch) {
+        nonURLMatches += nonURLMatch.length;
+      }
+
+      let fourthSearch = new RegExp(/\"\"/, "g");
+      let fifthSearch = new RegExp(/\"\`/, "g");
+      let sixthSearch = new RegExp(/\`\"/, "g");
+      let fourthFifthAndSixthReplacement = "`";
+
+      string = string.replaceAll(firstRegex, firstReplacement);
+      string = string.replaceAll(secondSearch, secondReplacement);
+      string = string.replaceAll(thirdSearch, thirdReplacement);
+      string = string.replaceAll(fourthSearch, fourthFifthAndSixthReplacement);
+      string = string.replaceAll(fifthSearch, fourthFifthAndSixthReplacement);
+      string = string.replaceAll(sixthSearch, fourthFifthAndSixthReplacement);
+
+      console.log(
+        firstReplacement,
+        secondReplacement,
+        thirdReplacement,
+        fourthFifthAndSixthReplacement
+      );
+    }
+    this.setState({ copyArea: string });
+    console.log(URLMatches, nonURLMatches);
+  };
+
   drawClicked = async () => {
     if (this.state.drawn.length < 5) {
       try {

@@ -1,5 +1,5 @@
 import * as React from "react";
-const CarsTest = (props) => (
+const Cars = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -7,37 +7,29 @@ const CarsTest = (props) => (
     width={234}
     {...props}
   >
-    
     <title>{"Vintage red cars"}</title>
     <defs>
-      
       <linearGradient id={"32f56470-7a31-4316-9a64-98b1eb0ba975"}>
-        
         <stop offset={0} style={{ stopColor: "#dc0000" }} />
         <stop offset={1} style={{ stopColor: "#0e232e" }} />
       </linearGradient>
       <linearGradient id={"574b71f5-0998-48ce-9e7e-83826730103f"}>
-        
         <stop offset={0} style={{ stopColor: "#2d2d2d" }} />
         <stop offset={1} style={{ stopColor: "#666" }} />
       </linearGradient>
       <linearGradient id={"ed6afcc7-4259-43a3-923e-a830044db19d"}>
-        
         <stop offset={0} style={{ stopColor: "#666" }} />
         <stop offset={1} style={{ stopColor: "#bdcdd4" }} />
       </linearGradient>
       <linearGradient id={"20cce80c-9901-4d71-90e9-5ed2e189024d"}>
-        
         <stop offset={0} style={{ stopColor: "#2d2d2d" }} />
         <stop offset={1} style={{ stopColor: "#2d2d2d" }} />
       </linearGradient>
       <linearGradient id={"45bc725e-677d-438d-b7de-98df77766452"}>
-        
         <stop offset={0} style={{ stopColor: "#2d2d2d" }} />
         <stop offset={1} style={{ stopColor: "#fff" }} />
       </linearGradient>
       <linearGradient id={"4c23e505-2329-431a-8b0b-228c03efef4a"}>
-        
         <stop offset={0} style={{ stopColor: "#666" }} />
         <stop offset={1} style={{ stopColor: "#2d2d2d" }} />
       </linearGradient>
@@ -308,7 +300,6 @@ const CarsTest = (props) => (
         y2={838.21}
         id={"366f9519-75ef-422b-8dc1-bb0c43b7765f"}
       >
-        
         <stop offset={0} style={{ stopColor: "#b50000" }} />
         <stop offset={1} style={{ stopColor: "#b50000" }} />
       </linearGradient>
@@ -321,7 +312,6 @@ const CarsTest = (props) => (
         y2={743.79}
         id={"d2cf2ad1-0a75-41f1-a7bc-632ee3f3adcb"}
       >
-        
         <stop offset={0} style={{ stopColor: "#b50000" }} />
         <stop offset={1} style={{ stopColor: "#dc0000" }} />
       </linearGradient>
@@ -344,7 +334,6 @@ const CarsTest = (props) => (
         y2={800.93}
         id={"1daa832a-d22c-4039-91f3-1b4b1945aa63"}
       >
-        
         <stop offset={0} style={{ stopColor: "#b50000" }} />
         <stop offset={1} style={{ stopColor: "#dc0000" }} />
       </linearGradient>
@@ -427,7 +416,6 @@ const CarsTest = (props) => (
         y2={802.36}
         id={"0ba52791-ab8e-47ff-9c5f-adf04e040196"}
       >
-        
         <stop offset={0} style={{ stopColor: "#b50000" }} />
         <stop offset={1} style={{ stopColor: "#ff4141" }} />
       </linearGradient>
@@ -439,7 +427,6 @@ const CarsTest = (props) => (
         y2={798.36}
         id={"6857b19b-873c-4e1b-935d-6e9c782c74b1"}
       >
-        
         <stop offset={0} style={{ stopColor: "#dc0000" }} />
         <stop offset={1} style={{ stopColor: "#2d2d2d" }} />
       </linearGradient>
@@ -452,7 +439,6 @@ const CarsTest = (props) => (
         y2={880.36}
         id={"c5618453-0520-4eda-bdf2-2150781b9016"}
       >
-        
         <stop offset={0} style={{ stopColor: "#0e232e" }} />
         <stop offset={1} style={{ stopColor: "#0e232e", stopOpacity: 0 }} />
       </linearGradient>
@@ -464,7 +450,6 @@ const CarsTest = (props) => (
         y2={826.36}
         id={"958ff63b-3673-4fb3-bf69-5ef9216be770"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#b50000" }} />
       </linearGradient>
@@ -476,7 +461,6 @@ const CarsTest = (props) => (
         y2={798.98}
         id={"6de017b8-4247-4f96-87d6-6a9cf6c80a1b"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#fff", stopOpacity: 0 }} />
       </linearGradient>
@@ -489,7 +473,6 @@ const CarsTest = (props) => (
         y2={738.36}
         id={"da1d7468-eb00-4ede-863c-2f77693cdc01"}
       >
-        
         <stop offset={0} style={{ stopColor: "#0e232e" }} />
         <stop offset={1} style={{ stopColor: "#b50000" }} />
       </linearGradient>
@@ -537,7 +520,6 @@ const CarsTest = (props) => (
         y2={798.36}
         id={"59c0a637-223f-4aaa-b9a4-ca24acd08985"}
       >
-        
         <stop offset={0} style={{ stopColor: "#dc0000" }} />
         <stop offset={1} style={{ stopColor: "#2d2d2d" }} />
       </linearGradient>
@@ -549,7 +531,6 @@ const CarsTest = (props) => (
         y2={826.36}
         id={"ad7ee4eb-b3dd-417d-b897-c34541ab0620"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#b50000" }} />
       </linearGradient>
@@ -561,7 +542,6 @@ const CarsTest = (props) => (
         y2={798.98}
         id={"7bf1955c-16aa-46d2-88e7-26491792abc4"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#fff", stopOpacity: 0 }} />
       </linearGradient>
@@ -989,7 +969,6 @@ const CarsTest = (props) => (
         y2={798.36}
         id={"f56ec8da-d1d0-49ed-91e5-d1a1fcfa45e4"}
       >
-        
         <stop offset={0} style={{ stopColor: "#dc0000" }} />
         <stop offset={1} style={{ stopColor: "#2d2d2d" }} />
       </linearGradient>
@@ -1001,7 +980,6 @@ const CarsTest = (props) => (
         y2={826.36}
         id={"80587080-5807-43ae-9b15-cbfb57d5eb52"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#b50000" }} />
       </linearGradient>
@@ -1013,7 +991,6 @@ const CarsTest = (props) => (
         y2={798.98}
         id={"921390cd-a7f1-47c1-b910-240f2f0a87b8"}
       >
-        
         <stop offset={0} style={{ stopColor: "#fff" }} />
         <stop offset={1} style={{ stopColor: "#fff", stopOpacity: 0 }} />
       </linearGradient>
@@ -1483,7 +1460,6 @@ const CarsTest = (props) => (
         height={1.389}
         id={"4ac2c696-792f-4136-b28e-2fec2cbf40ab"}
       >
-        
         <feGaussianBlur stdDeviation={3.03} />
       </filter>
       <filter
@@ -1494,7 +1470,6 @@ const CarsTest = (props) => (
         height={2.876}
         id={"b6765707-9a7a-40ff-927b-70ac7f215dbb"}
       >
-        
         <feGaussianBlur stdDeviation={4.03} />
       </filter>
       <filter
@@ -1505,7 +1480,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"574f3aa0-23ef-462d-bb13-ee62828bf48e"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1516,7 +1490,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"4012d171-7090-4e45-81df-f84e86b17809"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1527,7 +1500,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"1f42a3e3-8aa6-4c70-bf3d-7f47d3c1adaf"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1538,7 +1510,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"8178c8d3-49a9-432e-8588-1a246e993b22"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1549,7 +1520,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"6df4e7a8-a1a3-45f5-b106-c1972b82c850"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1560,7 +1530,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"6655d714-e967-4dd0-a3b6-b874b0120072"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1571,7 +1540,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"1a871195-1d44-48ea-b3bd-3a1c8a3cd971"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1582,7 +1550,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"c7792c88-3861-4174-8caf-83aa7ce985dd"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1593,7 +1560,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"9f769438-e9d8-4715-9b86-922535aee35c"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1604,7 +1570,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"2d84b4d2-94f1-43fa-9a5e-b53e2d4fe708"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1615,7 +1580,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"333d83a3-fc3d-4e90-8f8a-f2d56ec22fd7"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1626,7 +1590,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"6d3f79b3-ac86-473d-827a-d8d659a107f0"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1637,7 +1600,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"97bd772c-eb18-4a4d-b8c7-54d4214c3be7"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1648,7 +1610,6 @@ const CarsTest = (props) => (
         height={1.041}
         id={"db968770-bd25-4012-a0c5-6962c39bb963"}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1659,7 +1620,6 @@ const CarsTest = (props) => (
         height={1.482}
         id={"c69e09a0-9e22-4279-9271-f50d56d53955"}
       >
-        
         <feGaussianBlur stdDeviation={1.808} />
       </filter>
       <filter
@@ -1670,7 +1630,6 @@ const CarsTest = (props) => (
         id={"af7d7c29-33ca-4ad4-a6ad-055fd73f0589"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={3.03} />
       </filter>
       <filter
@@ -1681,7 +1640,6 @@ const CarsTest = (props) => (
         id={"55f797f2-b7e8-4ae8-8464-7cbe05b6b680"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={4.03} />
       </filter>
       <filter
@@ -1692,7 +1650,6 @@ const CarsTest = (props) => (
         id={"67052acb-e0c6-44fc-aef4-2c8f6a561367"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1703,7 +1660,6 @@ const CarsTest = (props) => (
         id={"8ef3e3ae-37ad-4f25-8013-30c40a22df9a"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1714,7 +1670,6 @@ const CarsTest = (props) => (
         id={"7fe4ee87-aa56-47a4-b44c-cbd60a443b46"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1725,7 +1680,6 @@ const CarsTest = (props) => (
         id={"36490f8b-21f2-41bb-86e2-ae2b55fb4460"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1736,7 +1690,6 @@ const CarsTest = (props) => (
         id={"20ffd7ee-6e57-47aa-b73f-db8203eefba4"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1747,7 +1700,6 @@ const CarsTest = (props) => (
         id={"91c0f60d-8980-49db-b0de-7405d1b6c694"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1758,7 +1710,6 @@ const CarsTest = (props) => (
         id={"a8ad529d-4df8-4701-b71b-a21b28f8fabe"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1769,7 +1720,6 @@ const CarsTest = (props) => (
         id={"f72ca3a8-d74c-4d5d-9589-8f6570e09950"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1780,7 +1730,6 @@ const CarsTest = (props) => (
         id={"8f7f9a2a-cfb5-434e-83b2-4e54830e2d20"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1791,7 +1740,6 @@ const CarsTest = (props) => (
         id={"2cd6f6d0-5ce4-40b8-a2fd-aefba7114e9f"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1802,7 +1750,6 @@ const CarsTest = (props) => (
         id={"bec53851-bb94-46b8-90a2-80adc3759303"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1813,7 +1760,6 @@ const CarsTest = (props) => (
         id={"0f7ea2a0-ceaa-4421-b564-63b3ce03a789"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1824,7 +1770,6 @@ const CarsTest = (props) => (
         id={"2eefc4e7-2f2b-4468-9084-5c5b9eccf5f5"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1835,7 +1780,6 @@ const CarsTest = (props) => (
         id={"b74e3ab7-0b93-4d54-8b61-3b67385d748d"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1846,7 +1790,6 @@ const CarsTest = (props) => (
         id={"ed95752f-8c7d-4e99-a7c8-94995a6602f2"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={1.808} />
       </filter>
       <filter
@@ -1857,7 +1800,6 @@ const CarsTest = (props) => (
         id={"85a3e000-4b96-429f-8e7f-6df8dfde8a4e"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={3.03} />
       </filter>
       <filter
@@ -1868,7 +1810,6 @@ const CarsTest = (props) => (
         id={"a6d86f46-2720-49cd-8b4a-fe300913c5eb"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={4.03} />
       </filter>
       <filter
@@ -1879,7 +1820,6 @@ const CarsTest = (props) => (
         id={"b0fc8b95-c451-47fe-b552-209c585665aa"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1890,7 +1830,6 @@ const CarsTest = (props) => (
         id={"38140443-d31c-47f0-ae44-a839039645a2"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1901,7 +1840,6 @@ const CarsTest = (props) => (
         id={"7db2fc7a-119f-4675-afa8-a836e9ab1c5c"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1912,7 +1850,6 @@ const CarsTest = (props) => (
         id={"d32fca48-a07d-4b3b-a523-af80f00f42f4"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1923,7 +1860,6 @@ const CarsTest = (props) => (
         id={"37280033-da38-4671-a900-29f60ebb9b59"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1934,7 +1870,6 @@ const CarsTest = (props) => (
         id={"0301ac97-3976-4684-83cd-c1e72f9676b6"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1945,7 +1880,6 @@ const CarsTest = (props) => (
         id={"8ef87f03-6609-4eed-9a29-1b5ea7544351"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1956,7 +1890,6 @@ const CarsTest = (props) => (
         id={"d4f6ce5c-3934-4f7b-bd7f-8358c30a6e0c"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1967,7 +1900,6 @@ const CarsTest = (props) => (
         id={"e1a2c3c2-3609-4665-b8dd-5ae20f3bdbd0"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1978,7 +1910,6 @@ const CarsTest = (props) => (
         id={"1540e5f9-f206-46b8-9085-2bfba4d26bf2"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -1989,7 +1920,6 @@ const CarsTest = (props) => (
         id={"dcce1a3d-3d01-4bac-be20-b38bb1d79518"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -2000,7 +1930,6 @@ const CarsTest = (props) => (
         id={"65f9a5e5-63b2-4aa1-a552-27d98bb73a19"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -2011,7 +1940,6 @@ const CarsTest = (props) => (
         id={"184b04f2-4b1f-4035-a387-ab7d65effff8"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -2022,7 +1950,6 @@ const CarsTest = (props) => (
         id={"c2b4e2bc-f353-427c-9bab-afae3d2fd308"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={0.489} />
       </filter>
       <filter
@@ -2033,7 +1960,6 @@ const CarsTest = (props) => (
         id={"e60c37b1-c8d3-4c3f-ba15-4677f6c7e575"}
         style={{ colorInterpolationFilters: "sRGB" }}
       >
-        
         <feGaussianBlur stdDeviation={1.808} />
       </filter>
       <radialGradient
@@ -2062,7 +1988,6 @@ const CarsTest = (props) => (
         gradientUnits="userSpaceOnUse"
         id={"d0a1d869-f0c3-4b82-8770-f396474bc758"}
       >
-        
         <stop offset={0} style={{ stopColor: "#bdcdd4" }} />
         <stop offset={1} style={{ stopColor: "#fff" }} />
       </radialGradient>
@@ -2200,7 +2125,6 @@ const CarsTest = (props) => (
         gradientUnits="userSpaceOnUse"
         id={"dfae98ef-08e2-442e-bb0f-3150340b44a1"}
       >
-        
         <stop offset={0} style={{ stopColor: "#bdcdd4" }} />
         <stop offset={1} style={{ stopColor: "#fff" }} />
       </radialGradient>
@@ -2284,7 +2208,6 @@ const CarsTest = (props) => (
         gradientUnits="userSpaceOnUse"
         id={"b3e91818-8079-43de-81f4-16ac90f4fe65"}
       >
-        
         <stop offset={0} style={{ stopColor: "#bdcdd4" }} />
         <stop offset={1} style={{ stopColor: "#fff" }} />
       </radialGradient>
@@ -2293,7 +2216,6 @@ const CarsTest = (props) => (
       style={{ strokeWidth: 3.18132 }}
       transform="matrix(.31382 0 0 .31485 -159.05 -138.119)"
     >
-      
       <rect
         style={{
           fill: "#5aa02c",
@@ -2317,7 +2239,6 @@ const CarsTest = (props) => (
         transform="matrix(1.21556 0 0 1.21646 587.74 -519.614)"
         style={{ strokeWidth: 2.6162 }}
       >
-        
         <path
           d="m107.83 901-4.546-11.112c5.545-5.41 10.837-11.325 24.244-1.01 0 0 5.258 28.55 15.152 37.88 6.973 6.575 17.693 8.875 27.274 9.092 12.947.293 25.694-5.015 37.376-10.607 4.467-2.138 7.416-10.127 12.122-8.586 2.024.662 2.399 3.965 2.02 6.06-17.717 40.016-80.383 30.6-79.801 16.669 2.158-7.964-6.367-35.888-33.84-38.386z"
           style={{
@@ -2399,7 +2320,6 @@ const CarsTest = (props) => (
           }}
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -2407,7 +2327,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -2429,7 +2348,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#554f4f", strokeWidth: 2.61562 }}>
-          
           <path
             style={{
               fill: `url(#90ac47a1-790f-4f07-b4eb-dcaade4424e0)`,
@@ -2529,7 +2447,6 @@ const CarsTest = (props) => (
           d="M430.58 949.98c-20.67 0-37.425 16.627-37.425 37.127 0 20.501 16.756 37.11 37.425 37.11 20.67 0 37.425-16.609 37.425-37.11 0-20.5-16.756-37.127-37.425-37.127zm0 2.755c19.136 0 34.653 15.393 34.653 34.372s-15.518 34.355-34.653 34.355c-19.136 0-34.653-15.376-34.653-34.355 0-18.98 15.518-34.372 34.653-34.372z"
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
@@ -2537,7 +2454,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
@@ -2559,7 +2475,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#9f9999", strokeWidth: 0.470445 }}>
-          
           <path
             d="M-245.98 826.55c-55.038 0-99.649 44.13-99.649 98.548s44.611 98.519 99.649 98.519c55.038 0 99.677-44.102 99.677-98.519 0-54.418-44.639-98.548-99.677-98.548zm0 26.945c39.99 0 72.414 32.064 72.414 71.603 0 39.539-32.424 71.575-72.414 71.575s-72.387-32.035-72.387-71.575c0-39.539 32.397-71.603 72.387-71.603z"
             style={{
@@ -3455,7 +3370,6 @@ const CarsTest = (props) => (
         transform="matrix(1.21556 0 0 1.21646 587.74 -189.614)"
         style={{ strokeWidth: 2.6162 }}
       >
-        
         <path
           d="m107.83 901-4.546-11.112c5.545-5.41 10.837-11.325 24.244-1.01 0 0 5.258 28.55 15.152 37.88 6.973 6.575 17.693 8.875 27.274 9.092 12.947.293 25.694-5.015 37.376-10.607 4.467-2.138 7.416-10.127 12.122-8.586 2.024.662 2.399 3.965 2.02 6.06-17.717 40.016-80.383 30.6-79.801 16.669 2.158-7.964-6.367-35.888-33.84-38.386z"
           style={{
@@ -3537,7 +3451,6 @@ const CarsTest = (props) => (
           }}
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -3545,7 +3458,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -3567,7 +3479,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#554f4f", strokeWidth: 2.61562 }}>
-          
           <path
             style={{
               fill: `url(#4c1f9714-c686-4e16-9ace-963af8252f57)`,
@@ -3667,7 +3578,6 @@ const CarsTest = (props) => (
           d="M430.58 949.98c-20.67 0-37.425 16.627-37.425 37.127 0 20.501 16.756 37.11 37.425 37.11 20.67 0 37.425-16.609 37.425-37.11 0-20.5-16.756-37.127-37.425-37.127zm0 2.755c19.136 0 34.653 15.393 34.653 34.372s-15.518 34.355-34.653 34.355c-19.136 0-34.653-15.376-34.653-34.355 0-18.98 15.518-34.372 34.653-34.372z"
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
@@ -3675,7 +3585,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
@@ -3697,7 +3606,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#9f9999", strokeWidth: 0.470445 }}>
-          
           <path
             d="M-245.98 826.55c-55.038 0-99.649 44.13-99.649 98.548s44.611 98.519 99.649 98.519c55.038 0 99.677-44.102 99.677-98.519 0-54.418-44.639-98.548-99.677-98.548zm0 26.945c39.99 0 72.414 32.064 72.414 71.603 0 39.539-32.424 71.575-72.414 71.575s-72.387-32.035-72.387-71.575c0-39.539 32.397-71.603 72.387-71.603z"
             style={{
@@ -4593,7 +4501,6 @@ const CarsTest = (props) => (
         transform="matrix(1.21556 0 0 1.21646 587.74 140.386)"
         style={{ strokeWidth: 2.6162 }}
       >
-        
         <path
           d="m107.83 901-4.546-11.112c5.545-5.41 10.837-11.325 24.244-1.01 0 0 5.258 28.55 15.152 37.88 6.973 6.575 17.693 8.875 27.274 9.092 12.947.293 25.694-5.015 37.376-10.607 4.467-2.138 7.416-10.127 12.122-8.586 2.024.662 2.399 3.965 2.02 6.06-17.717 40.016-80.383 30.6-79.801 16.669 2.158-7.964-6.367-35.888-33.84-38.386z"
           style={{
@@ -4675,7 +4582,6 @@ const CarsTest = (props) => (
           }}
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -4683,7 +4589,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
@@ -4705,7 +4610,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#554f4f", strokeWidth: 2.61562 }}>
-          
           <path
             style={{
               fill: `url(#307320d1-7d07-44ec-9925-8c07cdccf3f1)`,
@@ -4805,7 +4709,6 @@ const CarsTest = (props) => (
           d="M430.58 949.98c-20.67 0-37.425 16.627-37.425 37.127 0 20.501 16.756 37.11 37.425 37.11 20.67 0 37.425-16.609 37.425-37.11 0-20.5-16.756-37.127-37.425-37.127zm0 2.755c19.136 0 34.653 15.393 34.653 34.372s-15.518 34.355-34.653 34.355c-19.136 0-34.653-15.376-34.653-34.355 0-18.98 15.518-34.372 34.653-34.372z"
         />
         <g style={{ stroke: "#333", strokeWidth: 3.9243 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#333", strokeWidth: 3.9243 }}
@@ -4813,7 +4716,6 @@ const CarsTest = (props) => (
           />
         </g>
         <g style={{ stroke: "#4d3636", strokeWidth: 3.92482 }}>
-          
           <path
             d="m-214.15 715.98-14.142-51.518M-211.12 780.63l-17.173-48.487M-212.77 718.6l-.326-53.423M-226.57 781.83l-4.038-51.28M-211.8 721.08l13.511-51.687M-241.5 778.58l9.372-50.578M-211.33 723.27l26.429-46.429M-254.9 771.13l22.143-46.429M-211.43 725.52l37.545-38.006M-265.91 760.47l33.405-39.116M-212.12 727.66l46.102-26.994M-273.78 747.32l42.391-29.137M-213.33 729.54l51.52-14.14M-277.98 732.57l48.487-17.173M-214.99 731.05l53.423-.326M-278.22 717.25l51.28-4.038M-217.47 732.02l51.687 13.511M-274.97 702.32l50.578 9.372M-219.66 732.5l46.429 26.429M-267.52 688.93l46.429 22.143M-221.91 732.39l38.006 37.545M-256.86 677.92l39.116 33.405"
             style={{ fill: "none", stroke: "#4d3636", strokeWidth: 3.92482 }}
@@ -4835,7 +4737,6 @@ const CarsTest = (props) => (
           ry={18.688}
         />
         <g style={{ stroke: "#9f9999", strokeWidth: 0.470445 }}>
-          
           <path
             d="M-245.98 826.55c-55.038 0-99.649 44.13-99.649 98.548s44.611 98.519 99.649 98.519c55.038 0 99.677-44.102 99.677-98.519 0-54.418-44.639-98.548-99.677-98.548zm0 26.945c39.99 0 72.414 32.064 72.414 71.603 0 39.539-32.424 71.575-72.414 71.575s-72.387-32.035-72.387-71.575c0-39.539 32.397-71.603 72.387-71.603z"
             style={{
@@ -5730,4 +5631,4 @@ const CarsTest = (props) => (
     </g>
   </svg>
 );
-export default CarsTest;
+export default Cars;

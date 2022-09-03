@@ -1,10 +1,12 @@
 import * as React from "react";
-
 const AbstractScene = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={234} height={333} {...props}>
     <title>{"Abstract Scene"}</title>
     <defs>
-      <clipPath clipPathUnits="userSpaceOnUse" id="a">
+      <clipPath
+        clipPathUnits="userSpaceOnUse"
+        id={"a6b287c3-ce24-4cf6-9c43-c6e6c95473f2"}
+      >
         <rect
           style={{
             fill: "#fff",
@@ -27,10 +29,8 @@ const AbstractScene = (props) => (
       </clipPath>
     </defs>
     <g
-      clipPath="url(#a)"
-      style={{
-        strokeWidth: 3.17257667,
-      }}
+      clipPath={`url(#a6b287c3-ce24-4cf6-9c43-c6e6c95473f2)`}
+      style={{ strokeWidth: 3.17257667 }}
       transform="matrix(.31484 0 0 .31557 .928 .504)"
     >
       <path
@@ -220,5 +220,4 @@ const AbstractScene = (props) => (
     </g>
   </svg>
 );
-
 export default AbstractScene;

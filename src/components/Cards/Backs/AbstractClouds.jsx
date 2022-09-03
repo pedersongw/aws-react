@@ -1,8 +1,8 @@
 import * as React from "react";
 
-const Test = (props) => (
+const AbstractClouds = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" height={333} width={234} {...props}>
-    <title>{"Abstract Clouds"}</title>
+    <title>{"AbstractClouds Clouds"}</title>
     <defs>
       <filter
         style={{
@@ -4509,4 +4509,4 @@ const Test = (props) => (
   </svg>
 );
 
-export default Test;
+export default AbstractClouds;
